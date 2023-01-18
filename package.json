@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@steamship/cli": "^2.2.11"
+  }
+}

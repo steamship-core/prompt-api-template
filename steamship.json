@@ -1,0 +1,36 @@
+{
+  "type": "package",
+  "handle": "my-prompt-package",
+  "version": "1.0.0",
+  "description": "",
+  "author": "",
+  "entrypoint": "api.handler",
+  "public": true,
+  "build_config": {
+    "ignore": [
+      "tests",
+      "examples"
+    ]
+  },
+  "configTemplate": {},
+  "steamshipRegistry": {
+    "tagline": "Generate text from prompts.",
+    "tagline2": "Just supply a few parameters and generate text.",
+    "usefulFor": null,
+    "videoUrl": null,
+    "githubUrl": null,
+    "demoUrl": null,
+    "blogUrl": null,
+    "jupyterUrl": null,
+    "authorGithub": null,
+    "authorName": null,
+    "authorEmail": null,
+    "authorTwitter": null,
+    "authorUrl": null,
+    "tags": [
+      "Prompt API",
+      "Prompt-based Generation",
+      "GPT-3"
+    ]
+  }
+}

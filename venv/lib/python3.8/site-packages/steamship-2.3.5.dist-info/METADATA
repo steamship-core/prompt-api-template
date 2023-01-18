@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: steamship
+Version: 2.3.5
+Summary: The fastest way to add language AI to your product.
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: AUTHORS.rst
+Requires-Dist: requests (==2.28.1)
+Requires-Dist: pydantic (==1.10.2)
+Requires-Dist: aiohttp (==3.8.3)
+Requires-Dist: inflection (==0.5.1)
+Requires-Dist: fluent-logger (==0.10.0)
+Requires-Dist: toml (==0.10.2)
+
+# Steamship Python Client Library
+
+Steamship is the fastest way to build, ship, and use full-lifecycle language AI.
+
+## Installing
+
+Install via pip:
+
+```
+pip install steamship
+```
+
+We also recommend installing the Steamship CLI for project management:
+
+```
+npm install -g @steamship/cli
+```
+
