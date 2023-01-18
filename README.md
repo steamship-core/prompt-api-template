@@ -6,7 +6,7 @@ This is a basic Replit template for building a [Steamship](https://steamship.com
 To get started, Click `Use Template` from the [template page](https://replit.com/@steamship/Steamship-Prompt-App-Template?v=1) in Replit.
 
 To run it:
-1. Get a Steamship API Key (Visit: [https://app.steamship.com/account/api](https://www.steamship.com/account/api)). If you do not
+1. Get a Steamship API Key (Visit: [https://steamship.com/account/api](https://www.steamship.com/account/api)). If you do not
    already have a Steamship account, you will need to create one.
 1. Copy this key to a [Replit Secret](https://docs.replit.com/programming-ide/storing-sensitive-information-environment-variables) named `STEAMSHIP_API_KEY`.
 1. Click the green `Run` button at the top of the window (or open a new Shell and type `python3 api.py`).
