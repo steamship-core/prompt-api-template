@@ -1,11 +1,14 @@
 # Overview
-This is a basic template for building a [Steamship](https://steamship.com) package for prompt-based text generation.
+This is a basic Replit template for building a [Steamship](https://steamship.com) package for prompt-based text generation.
 
 ## Quick Start
+
+To get started, Click `Use Template` from the [template page](https://replit.com/@steamship/Steamship-Prompt-App-Template?v=1) in Replit.
+
 To run it:
-1. Get a Steamship API Key (Visit: https://app.steamship.com/account/api). If you do not
+1. Get a Steamship API Key (Visit: [https://app.steamship.com/account/api](https://www.steamship.com/account/api)). If you do not
    already have a Steamship account, you will need to create one.
-1. Copy this key to a Replit Secret named STEAMSHIP_API_KEY.
+1. Copy this key to a [Replit Secret](https://docs.replit.com/programming-ide/storing-sensitive-information-environment-variables) named `STEAMSHIP_API_KEY`.
 1. Click the green `Run` button at the top of the window (or open a new Shell and type `python3 api.py`).
 
 # Prompt-based Text Generation
@@ -17,7 +20,7 @@ This template provides a simple mechanism to generate text based on a supplied p
 ### Prerequisites
 
 You will need a [Steamship](https://steamship.com) Account and an associated API Key. With an account, an API Key can be obtained
-via the website (https://app.steamship.com/account/api).
+via the website ([https://www.steamship.com/account/api](https://www.steamship.com/account/api)).
 
 You will need to create a Replit Secret for `STEAMSHIP_API_KEY` with your Steamship API key. 
 
@@ -33,7 +36,7 @@ First, ensure that you have descriptive package handle for your package in `stea
 
 To deploy it on [Steamship](https://steamship.com), open a **new** Shell and type `ship deploy`. This will push a new version of your Steamship package to Steamship's servers.
 
-Details about the package will be accessible via http://app.steamship.com/packages/<your-package-name\>. A default demo web app will also be deployed and made globally-accessible.
+Details about the package will be accessible via https://www.steamship.com/packages/<your-package-name\>. A default demo web app will also be deployed and made globally-accessible.
 
 # Package Files
 
