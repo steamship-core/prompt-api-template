@@ -1,5 +1,5 @@
 # Overview
-This is a basic Replit template for building a [Steamship](https://steamship.com) package for prompt-based text generation.
+This is a Replit template for building a [Steamship](https://steamship.com) package for prompt-based text generation.
 
 ## Quick Start
 
@@ -20,7 +20,7 @@ This template provides a simple mechanism to generate text based on a supplied p
 ### Prerequisites
 
 You will need a [Steamship](https://steamship.com) Account and an associated API Key. With an account, an API Key can be obtained
-via the website ([https://www.steamship.com/account/api](https://www.steamship.com/account/api)).
+via the website ([https://steamship.com/account/api](https://steamship.com/account/api)).
 
 You will need to create a Replit Secret for `STEAMSHIP_API_KEY` with your Steamship API key. 
 
@@ -42,7 +42,7 @@ Details about the package will be accessible via https://www.steamship.com/packa
 
 ## `api.py`
 
-The main logic for the generator lives entirely in `api.py`. This file contains a `PromptPackage` class with one API method: `generate()`. Inside of `generate()`, the prompt is built with the user-supplied parameters and submitted to the generation plugin. The returned value is then retrieved from storage and supplied in the return value for the invocation.
+The main logic for the generator lives entirely in `api.py`. This file contains a `PromptPackage` class with one API method: `generate()`. Inside of `generate()`, the prompt is built with the user-supplied parameters and submitted to the generation plugin.
 
 ## `steamship.json`
 
