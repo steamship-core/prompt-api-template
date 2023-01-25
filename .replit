@@ -29,7 +29,7 @@ channel = "stable-21_11"
 
 [env]
 VIRTUAL_ENV = "/home/runner/${REPL_SLUG}/venv"
-PATH = "${VIRTUAL_ENV}/bin:/home/runner/${REPL_SLUG}/node_modules/.bin"
+PATH = "${VIRTUAL_ENV}/bin"
 PYTHONPATH = "${VIRTUAL_ENV}/lib/python3.8/site-packages"
 REPLIT_POETRY_PYPI_REPOSITORY = "https://package-proxy.replit.com/pypi/"
 MPLBACKEND = "TkAgg"

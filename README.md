@@ -42,7 +42,7 @@ Details about the package will be accessible via https://www.steamship.com/packa
 
 ## `api.py`
 
-The main logic for the generator lives entirely in `api.py`. This file contains a `PromptPackage` class with one API method: `generate()`. Inside of `generate()`, the prompt is built with the user-supplied parameters and submitted to the generation plugin. The returned value is then retrieved from storage and supplied in the return value for the invocation.
+The main logic for the generator lives entirely in `api.py`. This file contains a `PromptPackage` class with one API method: `generate()`. Inside of `generate()`, the prompt is built with the user-supplied parameters and submitted to the generation plugin.
 
 ## `steamship.json`
 
