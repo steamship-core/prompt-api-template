@@ -22,8 +22,9 @@ class PromptPackage(PackageService):
   # Modify this to customize behavior to match your needs.
   PROMPT = "Say an unusual greeting to {name}. Compliment them on their {trait}."
 
-  # When this package is deployed, this annotation tells Steamship to expose an endpoint that
-  # accepts HTTP POST requests for the `/generate` request path.
+  # When this package is deployed, this annotation tells Steamship
+  # to expose an endpoint that accepts HTTP POST requests for the
+  # `/generate` request path.
   # See README.md for more information about deployment.
   @post("generate")
   def generate(self, name: str, trait: str) -> str:
