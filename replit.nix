@@ -1,8 +1,6 @@
 { pkgs }: {
   deps = [
     pkgs.python38Full
-    pkgs.nodePackages.npm
-    pkgs.nodejs
   ];
   env = {
     PYTHON_LD_LIBRARY_PATH = pkgs.lib.makeLibraryPath [
