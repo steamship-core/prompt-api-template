@@ -1,7 +1,7 @@
 {
 	"type": "package",
-	"handle": "my-prompt-package",
-	"version": "1.0.0",
+	"handle": "",
+	"version": "",
 	"description": "",
 	"author": "",
 	"entrypoint": "api.handler",

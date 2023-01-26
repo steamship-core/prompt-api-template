@@ -46,11 +46,7 @@ The main logic for the generator lives entirely in `api.py`. This file contains 
 
 ## `steamship.json`
 
-Metadata about your package lives in `steamship.json`. This includes a handle for the package, as well as a version (allowing for package updates). This information will be used when you deploy your package to Steamship to present package details to users.
-
-You should update the `handle` to match your desired external package name.
-
-Update the information in `steamshipRegistry` to allow Steamship to provide more detailed information about your package to your users.
+After you deploy once, you will see a new `steamship.json` file in your repl. This is the manifest Steamship uses to store metadata about your package. This includes a handle for the package, as well as a version (allowing for package updates). This information will be used when you deploy your package to Steamship to present package details to users.
 
 The tag `Prompt API` signals [Steamship](https://steamship.com) to automatically generate a special web interface for your package upon instance creation (post-deployment).
 
