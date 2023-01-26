@@ -1,2 +1,2 @@
-steamship >= 2.3.11
+steamship >= 2.3.12
 termcolor >= 2.2.0
