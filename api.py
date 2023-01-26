@@ -57,5 +57,8 @@ if __name__ == "__main__":
       for parameter in inspect.signature(package.generate).parameters:
         kwargs[parameter] = input(f'{parameter.capitalize()}: ')
       print("Generating...\n")
+
+      # This is the prompt-based generation call
       print(f'{package.generate(**kwargs)}\n')
+
       try_again = input("Try again (y/n)? ").lower().strip() == 'y'
