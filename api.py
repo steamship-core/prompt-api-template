@@ -43,6 +43,7 @@ class PromptPackage(PackageService):
 
 # Try it out locally by running this file!
 if __name__ == "__main__":
+  # This helper provides runtime API key prompting, etc.
   check_environment(RuntimeEnvironments.REPLIT)
 
   with Steamship.temporary_workspace() as client:
