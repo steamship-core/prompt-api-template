@@ -13,6 +13,7 @@ More information about this template is provided in README.md.
 To learn more about advanced uses of Steamship, read our docs at: https://docs.steamship.com/packages/using.html.
 """
 import inspect
+from termcolor import colored
 
 from steamship import check_environment, RuntimeEnvironments, Steamship
 from steamship.invocable import post, PackageService
@@ -43,22 +44,42 @@ class PromptPackage(PackageService):
 
 # Try it out locally by running this file!
 if __name__ == "__main__":
+  print(colored("Generate Compliments with GPT-3\n", attrs=['bold']))
+
   # This helper provides runtime API key prompting, etc.
   check_environment(RuntimeEnvironments.REPLIT)
 
   with Steamship.temporary_workspace() as client:
-    package = PromptPackage(client)
-    print("Let's try it out!")
+    prompt = PromptPackage(client)
+
+    example_name = "Han Solo"
+    example_trait = "heroism in the face of adversity"
+    print(colored("First, let's run through an example...", 'green'))
+    print(colored("Name:", 'grey'), f"{example_name}")
+    print(colored("Trait:", 'grey'), f"{example_trait}")
+    print(colored("Generating...", 'grey'))
+    print(colored("Compliment:", 'grey'),
+          f"{prompt.generate(name=example_name, trait=example_trait)}\n")
+
+    print(colored("Now, try with your own inputs...", 'green'))
 
     try_again = True
     while try_again:
-      print()
       kwargs = {}
-      for parameter in inspect.signature(package.generate).parameters:
-        kwargs[parameter] = input(f'{parameter.capitalize()}: ')
-      print("Generating...\n")
+      for parameter in inspect.signature(prompt.generate).parameters:
+        kwargs[parameter] = input(
+          colored(f'{parameter.capitalize()}: ', 'grey'))
+
+      print(colored("Generating...", 'grey'))
 
       # This is the prompt-based generation call
-      print(f'{package.generate(**kwargs)}\n')
+      print(colored("Compliment:", 'grey'), f'{prompt.generate(**kwargs)}\n')
 
-      try_again = input("Try again (y/n)? ").lower().strip() == 'y'
+      try_again = input(colored("Generate another (y/n)? ",
+                                'green')).lower().strip() == 'y'
+      print()
+
+    print("Ready to share with your friends (and the world)?")
+    print("Run ", colored("$ ship deploy ", color='green',
+                          on_color='on_black'),
+          "to get a production-ready API endpoint and web-based demo app.")

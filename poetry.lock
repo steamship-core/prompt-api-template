@@ -430,6 +430,17 @@ semver = "2.13.0"
 toml = "0.10.2"
 
 [[package]]
+name = "termcolor"
+version = "2.2.0"
+description = "ANSI color formatting for output in terminal"
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[package.extras]
+tests = ["pytest", "pytest-cov"]
+
+[[package]]
 name = "toml"
 version = "0.10.2"
 description = "Python Library for Tom's Obvious, Minimal Language"
@@ -531,7 +542,7 @@ testing = ["pytest (>=6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "flake8 
 [metadata]
 lock-version = "1.1"
 python-versions = ">=3.8.0,<3.9"
-content-hash = "e242430b72d240aed5a3deeebf3fb9d9930d2801baedbd12e6c5b5e30784e186"
+content-hash = "e8129f495e11e06a6511d52e0933e85711323186f41a2d26303ff7cd7ec60f99"
 
 [metadata.files]
 aiohttp = []
@@ -569,6 +580,7 @@ requests = []
 rope = []
 semver = []
 steamship = []
+termcolor = []
 toml = []
 tomli = []
 typing-extensions = []
