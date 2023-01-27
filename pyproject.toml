@@ -6,7 +6,7 @@ authors = ["Steamship Developers <developers@steamship.com>"]
 
 [tool.poetry.dependencies]
 python = ">=3.8.0,<3.9"
-steamship = "^2.3.12"
+steamship = "^2.3.13"
 termcolor = "^2.2.0"
 
 [tool.poetry.dev-dependencies]

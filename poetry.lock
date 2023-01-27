@@ -342,7 +342,7 @@ python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 
 [[package]]
 name = "steamship"
-version = "2.3.12"
+version = "2.3.13"
 description = "The fastest way to add language AI to your product."
 category = "main"
 optional = false
@@ -445,7 +445,7 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "1.1"
 python-versions = ">=3.8.0,<3.9"
-content-hash = "c35206c187598cf5332f596332f8334c1dcaa60a79d62e6f6724178e760cf8f4"
+content-hash = "a2e9416773711e6afe589d818c7b0b3b85dc98e7a089813e9f6b711dff1dc0ae"
 
 [metadata.files]
 aiohttp = []
